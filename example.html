@@ -47,9 +47,9 @@
             create: true,
         }
         if (demo.create) var green = new Tag(null, true)
-            .setName("div")
             .setParent(document.getElementById("main"))
-            .setContent(["test"])
+            .setContent(["This text should have a ", new Tag(null, true).setName('b').setContent(["green"]), " background"])
+            .setAttributes({class: "red"})
     </script>
 </body>
 
