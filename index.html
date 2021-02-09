@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library test</title>
+    <script src="lib/DOMKit.js"></script>
+</head>
+
+<body>
+    <style>
+        :root {
+            font-family: sans-serif;
+            font-size: xx-large;
+        }
+        * {
+            height: 33.3vh;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .red {
+            background-color: red;
+        }
+        .blue {
+            color: white;
+            background-color: blue;
+        }
+        .green {
+            color: white;
+            background-color: green;
+        }
+    </style>
+    <div class="red">This text should have a <b>red</b> background</div>
+    <div class="blue">This text should have a <b>blue</b> background</div>
+    <div class="green">This text should have a <b>green</b> background</div>
+    <script>
+        const demo = {
+            create: true,
+        }
+    </script>
+</body>
+
+</html>
