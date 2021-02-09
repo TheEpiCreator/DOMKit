@@ -15,31 +15,40 @@
             font-family: sans-serif;
             font-size: xx-large;
         }
+
         * {
             height: 33.3vh;
             text-align: center;
             margin: 0;
             padding: 0;
         }
+
         .red {
             background-color: red;
         }
+
         .blue {
             color: white;
             background-color: blue;
         }
+
         .green {
             color: white;
             background-color: green;
         }
     </style>
-    <div class="red">This text should have a <b>red</b> background</div>
-    <div class="blue">This text should have a <b>blue</b> background</div>
-    <div class="green">This text should have a <b>green</b> background</div>
+    <main id="main">
+        <div class="red">This text should have a <b>red</b> background</div>
+        <div class="blue">This text should have a <b>blue</b> background</div>
+        <div class="green">This text should have a <b>green</b> background</div>
+    </main>
     <script>
         const demo = {
             create: true,
         }
+        if (demo.create) var green = new Tag(null, true)
+            .setName("div")
+            .setParent(document.getElementById("main"))
     </script>
 </body>
 
